@@ -1,0 +1,59 @@
+{
+  "name": "network-scripts",
+  "version": "1.0.8",
+  "description": "This Test Suite is to cover regression test scripts related to Proagrica Network",
+  "main": "*.js",
+  "scripts": {
+    "test:ci:regressionTest": "testcafe test/e2e/testScripts/*.js --browser-init-timeout 240000 --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Regression_Test_Report.html --test-meta \"e2e=regression\"",
+    "test:ci:smokeTest": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Smoke_Test_Report.html --test-meta \"type3=smoke\"",
+    "test:ci:trafficManagerPageTest": "testcafe test/e2e/testScripts/testRunner_PN.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/TrafficManagerPage_Test_Report.html --test-meta \"type13=trafficmanagerpage\"",
+    "test:ci:adminPageTest": "testcafe test/e2e/testScripts/testRunner_New_Admin_PN.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/AdminPage_Test_Report.html --test-meta \"type2=adminpage\"",
+    "test:ci:journeyPageTest": "testcafe test/e2e/testScripts/testRunner_JM.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/JourneyPage_Test_Report.html --test-meta \"type7=journeypage\"",
+    "test:ci:journeyCreationTest": "testcafe test/e2e/testScripts/testRunner_JourneyCreation_JM.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/JourneyCreation_Test_Report.html --test-meta \"type7=journeypage\"",
+    "test:ci:transformPageTest": "testcafe test/e2e/testScripts/testRunner_TransformManager_TM.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/TransformPage_Test_Report.html --test-meta \"type8=transformpage\"",
+    "test:ci:CMRpageTest": "testcafe test/e2e/testScripts/testRunner_CMR_CM.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/CodeMatcherRoutes_Test_Report.html --test-meta \"type9=CMRpage\"",
+    "test:ci:catalougePageTest": "testcafe test/e2e/testScripts/testRunner_CM.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/CatalougeManagement_Test_Report.html --test-meta \"type10=catalougepage\"",
+    "test:ci:template": "testcafe test/e2e/testScripts/testRunner_CM.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/CatalougeManagementTemplate_Test_Report.html --test-meta \"type11=template\"",
+    "test:ci:miscCMPage": "testcafe test/e2e/testScripts/testRunner_CM.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/CatalougeManagementMisc_Test_Report.html --test-meta \"type12=miscCMPage\"",
+    "test:ci:UC1e2e": "testcafe test/e2e/testScripts/Usecase1.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Usecase1_Test_Report.html --test-meta \"type1=usecaseE2E\"",
+    "test:ci:UC2e2e": "testcafe test/e2e/testScripts/Usecase2*.js --config-file test/e2e/helpers/.testcaferc.json  --reporter html:test/e2e/reports/testResults/Usecase2_Test_Report.html --test-meta \"type1=usecaseE2E\"",
+    "test:ci:UC3e2e": "testcafe test/e2e/testScripts/Usecase3.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Usecase3_Test_Report.html --test-meta \"type1=usecaseE2E\"",
+    "test:ci:UC4e2e": "testcafe test/e2e/testScripts/Usecase4.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Usecase4_Test_Report.html --test-meta \"type1=usecaseE2E\"",
+    "test:ci:UC5e2e": "testcafe test/e2e/testScripts/Usecase5.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Usecase5_Test_Report.html --test-meta \"type1=usecaseE2E\"",
+    "test:ci:UC6e2e": "testcafe test/e2e/testScripts/Usecase6.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Usecase6_Test_Report.html --test-meta \"type1=usecaseE2E\"",
+    "test:ci:pagination": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Pagination_Test_Report.html --test-meta \"type5=pagination\"",
+    "test:ci:allUCe2e": "testcafe test/e2e/testScripts/Usecase*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/AllUsecases_Test_Report.html --test-meta \"type1=usecaseE2E\"",
+    "test:ci:access": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Access_Test_Report.html --test-meta \"type4=access\"",
+    "test:ci:sorting": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Sorting_Test_Report.html --test-meta \"type6=sorting\"",
+    "test:ci:dashboard": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Dashboard_Test_Report.html --test-meta \"type14=dashboard\"",
+    "test:ci:filterTM": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/TMFilter_Test_Report.html --test-meta \"type15=filter\"",
+    "test:ci:pagefooter": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/PageFooter_Test_Report.html --test-meta \"type16=pagefooter\"",
+    "test:ci:messageDetails": "testcafe test/e2e/testScripts/*.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/TMMessageDetails_Test_Report.html --test-meta \"type17=message\"",
+    "test:ci:Utility": "testcafe test/e2e/testScripts/utility_selector.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/Utility_Test_Report.html --test-meta \"type18=utility\"",
+    "test:ci:dataRun": "node scripts/testRunner.js",
+    "test:ci:ccData": "testcafe test/e2e/testScripts/Verify_MessageTrackingExecutionSIT_auto_test.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/CirrusMessage_CC-SIT_PN-Test.html --test-meta \"type20=ccData\"",
+    "test:ci:ccOATData": "testcafe test/e2e/testScripts/Verify_MessageTrackingExecutionOAT_auto_test.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/CirrusMessage_CC-OAT_PN-PRE.html --test-meta \"type20=ccData\"",
+    "test:ci:signUpProcess": "testcafe \"chrome --incognito\" test/e2e/testScripts/testRunner_SignUpFlow.js --config-file test/e2e/helpers/.testcaferc.json --reporter html:test/e2e/reports/testResults/signupFlow.html --test-meta \"type20=signUpFlow\""
+ 
+  },
+  "author": "Ajit Thakkar , Pepronia Auxi and Jothi Valan Muthalagan",
+  "license": "OSS",
+  "keywords": [
+    "testcafe",
+    "e2e",
+    "browser"
+  ],
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@types/uuid": "^9.0.2",
+    "axios": "^1.7.9",
+    "mailosaur": "^8.6.1",
+    "testcafe-browser-tools": "^2.0.26",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@testing-library/testcafe": "^5.0.1",
+    "testcafe": "^3.7.2",
+    "testcafe-reporter-html": "^1.4.6"
+  }
+}

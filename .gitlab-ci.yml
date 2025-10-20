@@ -1,0 +1,48 @@
+image: nexus-docker.proagrica-tooling.dev/proagrica-devops/testcafe-runner:1
+
+stages:
+  - test
+
+pn-test:
+  stage: test
+
+  before_script:
+    # Install Chrome dependencies
+    - apt-get update -qq && apt-get install -y -qq 
+        wget gnupg ca-certificates curl
+        fonts-liberation libasound2 libatk-bridge2.0-0 
+        libdrm2 libxcomposite1 libxdamage1 libxrandr2 
+        libgbm1 libxss1 libu2f-udev libvulkan1
+        libgtk-3-0 libgdk-pixbuf2.0-0 libxcursor1 
+        libxi6 libxtst6 libnss3 libcups2 libxfixes3 
+        libatspi2.0-0 --no-install-recommends
+    
+    # Add Google's official signing key
+    - wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -
+    
+    # Add Google Chrome repository
+    - echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list
+    
+    # Update package list
+    - apt-get update -qq
+    
+    # Install Chrome (latest stable or beta)
+    - apt-get install -y google-chrome-stable || apt-get install -y google-chrome-beta
+    
+    # Verify version
+    - google-chrome --version
+
+  # Install dependencies
+    - npm ci --no-fund
+  
+  script:
+    - ${TEST_SCRIPT}
+
+  artifacts:
+    paths:
+      - test/e2e/reports/testResults/
+    expire_in: 1 week
+    when: always
+
+  tags:
+    - k8s
