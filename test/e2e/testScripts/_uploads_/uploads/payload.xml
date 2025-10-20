@@ -1,0 +1,613 @@
+<Root id="INVOIC">
+  <Segment id="Envelope">
+    <Record id="UNB">
+      <Composite id="S001">
+        <Field id="0001">UNOC</Field>
+        <Field id="0002">3</Field>
+      </Composite>
+      <Composite id="S002">
+        <Field id="0004">3016003900107</Field>
+        <Field id="0007">14</Field>
+      </Composite>
+      <Composite id="S003">
+        <Field id="0010">3770001961255</Field>
+        <Field id="0007">14</Field>
+      </Composite>
+      <Composite id="S004">
+        <Field id="0017">250516</Field>
+        <Field id="0019">1839</Field>
+      </Composite>
+      <Field id="0020">00000000000955</Field>
+      <Field id="0026">INVOIC</Field>
+    </Record>
+    <Segment id="Envelope">
+      <Record id="UNH">
+        <Field id="0062">00000000000001</Field>
+        <Composite id="S009">
+          <Field id="0065">INVOIC</Field>
+          <Field id="0052">D</Field>
+          <Field id="0054">96A</Field>
+          <Field id="0051">UN</Field>
+          <Field id="0057">XXX</Field>
+        </Composite>
+      </Record>
+      <Record id="BGM">
+        <Composite id="C002">
+          <Field id="1001">380</Field>
+          <Field id="1000">FACTURE</Field>
+        </Composite>
+        <Field id="1004">8026528413</Field>
+        <Field id="1225">9</Field>
+      </Record>
+      <Record id="DTM">
+        <Composite id="C507">
+          <Field id="2005">137</Field>
+          <Field id="2380">20250516</Field>
+          <Field id="2379">102</Field>
+        </Composite>
+      </Record>
+      <Record id="DTM">
+        <Composite id="C507">
+          <Field id="2005">11</Field>
+          <Field id="2380">20250516</Field>
+          <Field id="2379">102</Field>
+        </Composite>
+      </Record>
+      <Record id="PAI">
+        <Composite id="C534">
+          <Field id="4461">42</Field>
+        </Composite>
+      </Record>
+      <Record id="ALI">
+        <Field id="4183">FB</Field>
+      </Record>
+      <Record id="FTX">
+        <Field id="4451">REG</Field>
+        <Composite id="C108">
+          <Field id="4440">SYNGENTA FRANCE SA</Field>
+          <Field id="4440">SA</Field>
+          <Field id="4440">101075884 EUR</Field>
+        </Composite>
+      </Record>
+      <Record id="FTX">
+        <Field id="4451">AAI</Field>
+        <Composite id="C108">
+          <Field id="4440">CAMPAGNE CULTURES DE PRINTEMPS :</Field>
+          <Field id="4440">DU 01.11.2024 AU 31.10.2025</Field>
+        </Composite>
+      </Record>
+      <Record id="FTX">
+        <Field id="4451">ACB</Field>
+        <Composite id="C108">
+          <Field id="4440">LES AVOIRS &quot;A REGLER&quot; SONT MIS &quot;EN COMPTE&quot; SI DES CR_ANCES _CHUES NE</Field>
+          <Field id="4440">SONT PAS R_GL_ES OU SI DES  EFFETS NE SONT PAS  RE_US 20 JOURS AVANT</Field>
+          <Field id="4440">LEUR DATE D&apos;_CH_ANCE.</Field>
+        </Composite>
+      </Record>
+      <Record id="FTX">
+        <Field id="4451">PMD</Field>
+        <Composite id="C108">
+          <Field id="4440">PENALITES DE RETARD AU TAUX DE 11,25% ANNUEL, CALCULEES SUR LA BASE DU</Field>
+          <Field id="4440">PRIX TTC MAJOREES D UNE INDEMNITE FORFAITAIRE DE 40 EUROS POUR FRAIS D</Field>
+          <Field id="4440">E</Field>
+          <Field id="4440">RECOUVREMENT.</Field>
+        </Composite>
+      </Record>
+      <Record id="FTX">
+        <Field id="4451">PMT</Field>
+        <Composite id="C108">
+          <Field id="4440">INDEMNITE FORFAITAIRE DE 40 EUROS POUR FRAIS DE RECOUVREMENT</Field>
+        </Composite>
+      </Record>
+      <Record id="FTX">
+        <Field id="4451">AAY</Field>
+        <Composite id="C108">
+          <Field id="4440">AGR_MENT MP02249 : DISTRIBUTION ET APPLICATION DE PRODUITS</Field>
+          <Field id="4440">PHYTOPHARMACEUTIQUES.</Field>
+        </Composite>
+      </Record>
+      <Record id="FTX">
+        <Field id="4451">AAB</Field>
+        <Composite id="C108">
+          <Field id="4440">ESCOMPTE DE 2.90% ANNUEL POUR TOUT PAIEMENT ANTICIPE INTERVENANT 15</Field>
+          <Field id="4440">JOURS AVANT LA DATE D ECHEANCE CALCULEE SUR LA BASE DU PRIX HT FACTURE</Field>
+          <Field id="4440">EN CAS D&apos;ESCOMPTE SUR CETTE FACTURE, IL SERA D_DUIT DE NOTRE CHIFFRE</Field>
+          <Field id="4440">D&apos;AFFAIRES TAXABLE. SEULE LA TAXE CORRESPONDANT AU PRIX EFFECTIVEMENT</Field>
+        </Composite>
+      </Record>
+      <Segment id="Segment Group 1">
+        <Record id="RFF">
+          <Composite id="C506">
+            <Field id="1153">CR</Field>
+            <Field id="1154">4550601554</Field>
+          </Composite>
+        </Record>
+        <Record id="DTM">
+          <Composite id="C507">
+            <Field id="2005">171</Field>
+            <Field id="2380">20250515</Field>
+            <Field id="2379">102</Field>
+          </Composite>
+        </Record>
+      </Segment>
+      <Segment id="Segment Group 1">
+        <Record id="RFF">
+          <Composite id="C506">
+            <Field id="1153">DQ</Field>
+            <Field id="1154">0850415060</Field>
+          </Composite>
+        </Record>
+        <Record id="DTM">
+          <Composite id="C507">
+            <Field id="2005">171</Field>
+            <Field id="2380">20250516</Field>
+            <Field id="2379">102</Field>
+          </Composite>
+        </Record>
+      </Segment>
+      <Segment id="Segment Group 1">
+        <Record id="RFF">
+          <Composite id="C506">
+            <Field id="1153">VN</Field>
+            <Field id="1154">0006367636</Field>
+          </Composite>
+        </Record>
+        <Record id="DTM">
+          <Composite id="C507">
+            <Field id="2005">171</Field>
+            <Field id="2380">20250515</Field>
+            <Field id="2379">102</Field>
+          </Composite>
+        </Record>
+      </Segment>
+      <Segment id="PartnerDetails">
+        <Segment id="Segment Group 2">
+          <Record id="NAD">
+            <Field id="3035">OB</Field>
+            <Composite id="C082">
+              <Field id="3039">3770001961255</Field>
+              <Field id="3055">9</Field>
+            </Composite>
+            <Composite id="C080">
+              <Field id="3036">AGRIHUB</Field>
+            </Composite>
+            <Composite id="C059">
+              <Field id="3042">10 PLACE DE CATALOGNE</Field>
+            </Composite>
+            <Field id="3164">PARIS</Field>
+            <Field id="3251">75014</Field>
+            <Field id="3207">FR</Field>
+          </Record>
+          <Record id="NAD">
+            <Field id="3035">DP</Field>
+            <Composite id="C082">
+              <Field id="3039">3027019630032</Field>
+              <Field id="3055">9</Field>
+            </Composite>
+            <Composite id="C080">
+              <Field id="3036">SEVEAL - LUDRES</Field>
+            </Composite>
+            <Composite id="C059">
+              <Field id="3042">193 RUE PAUL SABATIER</Field>
+              <Field id="3042">PARC D&apos;ACTIVITE DU PRE DE LA DAME</Field>
+            </Composite>
+            <Field id="3164">LUDRES</Field>
+            <Field id="3251">54710</Field>
+            <Field id="3207">FR</Field>
+          </Record>
+          <Record id="NAD">
+            <Field id="3035">SE</Field>
+            <Composite id="C082">
+              <Field id="3039">3016003900107</Field>
+              <Field id="3055">9</Field>
+            </Composite>
+            <Composite id="C080">
+              <Field id="3036">SYNGENTA FRANCE SA</Field>
+            </Composite>
+            <Composite id="C059">
+              <Field id="3042">1228, CHEMIN DE L&apos;HOBIT</Field>
+            </Composite>
+            <Field id="3164">SAINT-SAUVEUR</Field>
+            <Field id="3251">31790</Field>
+            <Field id="3207">FR</Field>
+          </Record>
+        </Segment>
+        <Segment id="Segment Group 3">
+          <Record id="RFF">
+            <Composite id="C506">
+              <Field id="1153">VA</Field>
+              <Field id="1154">FR11443716832</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment Group 3">
+          <Record id="RFF">
+            <Composite id="C506">
+              <Field id="1153">XA</Field>
+              <Field id="1154">R.C.S TOULOUSE 443 716 832</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment Group 3">
+          <Record id="RFF">
+            <Composite id="C506">
+              <Field id="1153">GN</Field>
+              <Field id="1154">443 716 832</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment Group 5">
+          <Record id="CTA">
+            <Field id="3139">SR</Field>
+            <Composite id="C056">
+              <Field id="3412">SYLVIE SOURBET</Field>
+            </Composite>
+          </Record>
+          <Record id="COM">
+            <Composite id="C076">
+              <Field id="3148">0800333330</Field>
+              <Field id="3155">TE</Field>
+            </Composite>
+          </Record>
+        </Segment>
+      </Segment>
+      <Segment id="PartnerDetails">
+        <Segment id="Segment Group 2">
+          <Record id="NAD">
+            <Field id="3035">IV</Field>
+            <Composite id="C082">
+              <Field id="3039">3770001961255</Field>
+              <Field id="3055">9</Field>
+            </Composite>
+            <Composite id="C080">
+              <Field id="3036">AGRIHUB</Field>
+            </Composite>
+            <Composite id="C059">
+              <Field id="3042">10 PLACE DE CATALOGNE</Field>
+            </Composite>
+            <Field id="3164">PARIS</Field>
+            <Field id="3251">75014</Field>
+            <Field id="3207">FR</Field>
+          </Record>
+          <Record id="FII">
+            <Field id="3035">PB</Field>
+            <Composite id="C078">
+              <Field id="3194">FR7630004024840001037451223</Field>
+              <Field id="3192">NP PARIBAS</Field>
+            </Composite>
+            <Composite id="C088">
+              <Field id="1131">25</Field>
+              <Field id="3055">5</Field>
+              <Field id="1131">25</Field>
+              <Field id="3055">5</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment Group 3">
+          <Record id="RFF">
+            <Composite id="C506">
+              <Field id="1153">VA</Field>
+              <Field id="1154">FR30534686704</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment Group 3">
+          <Record id="RFF">
+            <Composite id="C506">
+              <Field id="1153">GN</Field>
+              <Field id="1154">53468670400014</Field>
+            </Composite>
+          </Record>
+        </Segment>
+      </Segment>
+      <Segment id="Segment group 7">
+        <Record id="CUX">
+          <Composite id="C504">
+            <Field id="6347">2</Field>
+            <Field id="6345">EUR</Field>
+            <Field id="6343">4</Field>
+          </Composite>
+        </Record>
+      </Segment>
+      <Segment id="Segment group 8">
+        <Record id="PAT">
+          <Field id="4279">3</Field>
+        </Record>
+        <Record id="DTM">
+          <Composite id="C507">
+            <Field id="2005">13</Field>
+            <Field id="2380">20250630</Field>
+            <Field id="2379">102</Field>
+          </Composite>
+        </Record>
+        <Record id="MOA">
+          <Composite id="C516">
+            <Field id="5025">9</Field>
+            <Field id="5004">12723.3</Field>
+          </Composite>
+        </Record>
+      </Segment>
+      <Segment id="Segment group 8">
+        <Record id="PAT">
+          <Field id="4279">20</Field>
+        </Record>
+      </Segment>
+      <Segment id="Segment group 8">
+        <Record id="PAT">
+          <Field id="4279">22</Field>
+        </Record>
+      </Segment>
+      <Segment id="Segment group 8">
+        <Record id="PAT">
+          <Field id="4279">75</Field>
+        </Record>
+      </Segment>
+      <Segment id="TransportDetails">
+        <Segment id="Segment group 9">
+          <Record id="TDT">
+            <Field id="8051">20</Field>
+            <Composite id="C220">
+              <Field id="8067">30</Field>
+            </Composite>
+          </Record>
+        </Segment>
+      </Segment>
+      <Segment id="Segment group 12">
+        <Record id="TOD">
+          <Field id="4215">NC</Field>
+          <Composite id="C100">
+            <Field id="4053">CPT</Field>
+            <Field id="1131">106</Field>
+            <Field id="4052">FRANCO TRANSPORT</Field>
+          </Composite>
+        </Record>
+      </Segment>
+      <Segment id="Line">
+        <Segment id="Segment group 25">
+          <Record id="LIN">
+            <Field id="1082">10</Field>
+            <Composite id="C212">
+              <Field id="7140">3600391581606</Field>
+              <Field id="7143">EN</Field>
+            </Composite>
+          </Record>
+          <Record id="PIA">
+            <Field id="4347">5</Field>
+            <Composite id="C212">
+              <Field id="7140">000000000010708847</Field>
+              <Field id="7143">SA</Field>
+            </Composite>
+          </Record>
+          <Record id="IMD">
+            <Field id="7077">F</Field>
+            <Composite id="C273">
+              <Field id="7008">TOURNESOL SY_ARCO 150KS</Field>
+            </Composite>
+          </Record>
+          <Record id="IMD">
+            <Field id="7077">F</Field>
+            <Composite id="C273">
+              <Field id="7008">COMMODITY CODE 12060010</Field>
+            </Composite>
+          </Record>
+          <Record id="IMD">
+            <Field id="7077">F</Field>
+            <Composite id="C273">
+              <Field id="7008">GNIS 1143 EAN 3600391581606</Field>
+            </Composite>
+          </Record>
+          <Record id="QTY">
+            <Composite id="C186">
+              <Field id="6063">47</Field>
+              <Field id="6060">60</Field>
+              <Field id="6411">DOS</Field>
+            </Composite>
+          </Record>
+          <Record id="FTX">
+            <Field id="4451">AAI</Field>
+            <Composite id="C108">
+              <Field id="4440">GNIS 1143 EAN 3600391581606</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 26">
+          <Record id="MOA">
+            <Composite id="C516">
+              <Field id="5025">203</Field>
+              <Field id="5004">12060</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 28">
+          <Record id="PRI">
+            <Composite id="C509">
+              <Field id="5125">AAA</Field>
+              <Field id="5118">201</Field>
+              <Field id="6411">EUR</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 28">
+          <Record id="PRI">
+            <Composite id="C509">
+              <Field id="5125">AAB</Field>
+              <Field id="5118">253</Field>
+              <Field id="6411">EUR</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 29">
+          <Record id="RFF">
+            <Composite id="C506">
+              <Field id="1153">DQ</Field>
+              <Field id="1154">0850415060</Field>
+            </Composite>
+          </Record>
+          <Record id="DTM">
+            <Composite id="C507">
+              <Field id="2005">171</Field>
+              <Field id="2380">20250516</Field>
+              <Field id="2379">102</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 29">
+          <Record id="RFF">
+            <Composite id="C506">
+              <Field id="1153">IL</Field>
+              <Field id="1154">0006367636</Field>
+            </Composite>
+          </Record>
+          <Record id="DTM">
+            <Composite id="C507">
+              <Field id="2005">171</Field>
+              <Field id="2380">20250515</Field>
+              <Field id="2379">102</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 33">
+          <Record id="TAX">
+            <Field id="5283">7</Field>
+            <Composite id="C241">
+              <Field id="5153">VAT</Field>
+            </Composite>
+            <Composite id="C243">
+              <Field id="5279">T1</Field>
+              <Field id="3055">AEE</Field>
+              <Field id="5278">5.50</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="LineAllowances">
+          <Segment id="Segment group 38">
+            <Record id="ALC">
+              <Field id="5463">A</Field>
+              <Field id="4471">2</Field>
+              <Composite id="C214">
+                <Field id="7160">REM. DATE COMMANDE</Field>
+              </Composite>
+            </Record>
+          </Segment>
+          <Segment id="Segment group 39">
+            <Record id="QTY">
+              <Composite id="C186">
+                <Field id="6063">130</Field>
+                <Field id="6060">60</Field>
+                <Field id="6411">DOS</Field>
+              </Composite>
+            </Record>
+          </Segment>
+          <Segment id="Segment group 41">
+            <Record id="MOA">
+              <Composite id="C516">
+                <Field id="5025">204</Field>
+                <Field id="5004">32</Field>
+              </Composite>
+            </Record>
+          </Segment>
+        </Segment>
+        <Segment id="LineAllowances">
+          <Segment id="Segment group 38">
+            <Record id="ALC">
+              <Field id="5463">A</Field>
+              <Field id="4471">2</Field>
+              <Composite id="C214">
+                <Field id="7160">REM. DATE COMMANDE</Field>
+              </Composite>
+            </Record>
+          </Segment>
+          <Segment id="Segment group 39">
+            <Record id="QTY">
+              <Composite id="C186">
+                <Field id="6063">130</Field>
+                <Field id="6060">60</Field>
+                <Field id="6411">DOS</Field>
+              </Composite>
+            </Record>
+          </Segment>
+          <Segment id="Segment group 41">
+            <Record id="MOA">
+              <Composite id="C516">
+                <Field id="5025">204</Field>
+                <Field id="5004">20</Field>
+              </Composite>
+            </Record>
+          </Segment>
+        </Segment>
+      </Segment>
+      <Record id="UNS">
+        <Field id="0081">S</Field>
+      </Record>
+      <Segment id="InvoiceTotal">
+        <Segment id="Segment group 48">
+          <Record id="MOA">
+            <Composite id="C516">
+              <Field id="5025">128</Field>
+              <Field id="5004">12723.3</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 48">
+          <Record id="MOA">
+            <Composite id="C516">
+              <Field id="5025">124</Field>
+              <Field id="5004">663.3</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 48">
+          <Record id="MOA">
+            <Composite id="C516">
+              <Field id="5025">125</Field>
+              <Field id="5004">12060</Field>
+            </Composite>
+          </Record>
+        </Segment>
+        <Segment id="Segment group 48">
+          <Record id="MOA">
+            <Composite id="C516">
+              <Field id="5025">176</Field>
+              <Field id="5004">663.3</Field>
+            </Composite>
+          </Record>
+        </Segment>
+      </Segment>
+      <Segment id="Segment group 50">
+        <Record id="TAX">
+          <Field id="5283">7</Field>
+          <Composite id="C241">
+            <Field id="5153">VAT</Field>
+          </Composite>
+          <Composite id="C243">
+            <Field id="5279">T1</Field>
+            <Field id="3055">AEE</Field>
+            <Field id="5278">5.50</Field>
+          </Composite>
+        </Record>
+        <Record id="MOA">
+          <Composite id="C516">
+            <Field id="5025">125</Field>
+            <Field id="5004">12060</Field>
+          </Composite>
+        </Record>
+        <Record id="MOA">
+          <Composite id="C516">
+            <Field id="5025">124</Field>
+            <Field id="5004">663.3</Field>
+          </Composite>
+        </Record>
+      </Segment>
+      <Segment id="Segment group 51">
+        <Record id="UNT">
+          <Field id="0074">70</Field>
+          <Field id="0062">00000000000001</Field>
+        </Record>
+      </Segment>
+    </Segment>
+    <Record id="UNZ">
+      <Field id="0036">1</Field>
+      <Field id="0020">00000000000955</Field>
+    </Record>
+  </Segment>
+</Root>

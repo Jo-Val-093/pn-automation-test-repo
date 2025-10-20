@@ -1,0 +1,20 @@
+{
+"SITUrl" : "https://cirrusconnectsit.proagrica.telus.ag/",
+"UserName": "rajesh.charles@proagrica.com",
+"Password": "lazyTr3e802!",
+"switchtenantcode_c": "fr0000001230",
+"switchtenantcode_sit": "uk0000009099",
+"source_c": "Agrifirm NL (nl0000001002)",
+"destination_c": "Syngenta Seeds France (fr0000001230)",
+"destination_sit": "Test Company B (uk0000009100)",
+"destination_sit1": "ftp",
+"type_c": "financials",
+"type_ip": "Execution",
+"type_f": "movements",
+"switchtenantcode_f": "uk0000001194",
+"source_f": "Sisk (uk0000001194)",
+"destination_f": "Sisk Portal (uk0000001195)",
+"businessid_f": "NPPU025213",
+"switchtenantcountry": "United Kingdom"
+
+}

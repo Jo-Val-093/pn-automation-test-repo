@@ -1,0 +1,15 @@
+{
+"Url" : "https://cirrusconnectoat.eu.f4f.com",
+"UserName": "rajesh.charles@proagrica.com",
+"Password": "Test@124",
+"switchtenantcode_c" : "nl0000001002",
+"switchtenantcode_ip": "uk0000009099",
+"switchtenantcode_f": "uk0000000037",
+"destination_c": "Imperial Logistics NL (nl0000001025)",
+"type_c": "execution",
+"destination_ip": "Test Company B (uk0000009100)",
+"type_ip": "account",
+"destination_f": "Yara COP (uk0000000036)",
+"type_f": "account"
+
+}

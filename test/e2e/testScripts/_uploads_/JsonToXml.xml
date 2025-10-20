@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?> <o><payload class="object"><user class="object"><createdAt type="string">2025-03-19T10:00:00Z</createdAt><email type="string">john.doe@example.com</email><id type="string">12345</id><name type="string">John Doe</name><status type="string">active</status></user></payload></o>

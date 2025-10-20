@@ -1,0 +1,68 @@
+{
+  "browsers": "chrome:headless --no-sandbox --disable-dev-shm-usage --disable-web-security --disable-features=VizDisplayCompositor --disable-gpu --memory-pressure-off --max_old_space_size=4096 ",
+    "concurrency": 1,
+    "quarantineMode": false,
+  "skipJsErrors":true,
+  "src": "test/e2e/testScripts/*.js",
+  "hostname": "localhost",
+  "screenshots": {
+    "path": "test/e2e/testResults/ScreenShots",
+    "takeOnFails": false,
+    "fullPage": false,
+    "pathPattern": "${DATE}_${TIME}/${TEST}/${RUN_ID}/${USERAGENT}/screenshot-${FILE_INDEX}.png"
+  },
+  "videoPath": "test/e2e/testResults/videos/",
+  "videoOptions": {
+    "path": "test/e2e/testResults",
+    "singleFile": false,
+    "failedOnly": true,
+    "pathPattern": "${DATE}_${TIME}/${TEST}/${RUN_ID}/${USERAGENT}/video-${FILE_INDEX}.mp4"
+},
+  "color": true,
+  "useHttps": true,
+  "stopOnFirstFail": false,
+  "filter": {
+    "testMeta": {
+      "e2e": "regression",
+      "type1": "usecaseE2E",
+      "type2": "adminpage",
+      "type3": "smoke",
+      "type4": "access",
+      "type5": "pagination",
+      "type6": "sorting",
+      "type7": "journeypage",
+      "type8": "transformpage",
+      "type9": "CMRpage",
+      "type10": "catalougepage",
+      "type11": "template",
+      "type12": "miscCMPage",
+      "type13": "trafficmanagerpage",
+      "type14": "dashboard",
+      "type15": "filter",
+      "type16": "pagefooter",
+      "type17": "message",
+      "type18": "utility",
+      "type19": "Task Scheduler",
+      "type20":"ccData"
+    }
+  },
+  "report":"node report-generator.js",
+  "args":{
+     "reportFolder":"my-custom-folder",
+     "appName":"my-custom-folder"
+  },
+
+  "clientScripts": [
+  { "module": "@testing-library/dom/dist/@testing-library/dom.umd.js" }
+  ],
+
+  "reporter":[
+    {
+       "name":"html",
+       "output":"test/e2e/reports/testResults/"
+    }
+  ],
+    "nativeDialogs": false,
+    "disableMultipleWindows": true
+    
+}
