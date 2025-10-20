@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/drvic10k/bootstrap-sortable/ff650fd1/Contents/bootstrap-sortable.css">
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdn.rawgit.com/drvic10k/bootstrap-sortable/ff650fd1/Scripts/bootstrap-sortable.js"></script>
+    <script src="https://cdn.rawgit.com/drvic10k/bootstrap-sortable/ff650fd1/Scripts/moment.min.js"></script>
+    <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+
+      .thumbImg {
+        width: 100%;
+        max-width: 35px;
+        border-radius: 3px;
+        cursor: pointer;
+        margin-bottom: 5px;
+        border-width: 1px;
+        border-color: #f1f1f1;
+        border-style: solid;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 100px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+      }
+
+      .closeModal {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .closeModal:hover,
+      .closeModal:focus {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="myModal" class="modal">
+      <span class="closeModal">&times;</span>
+      <img class="modal-content" id="modelImage">
+    </div>
+    <div class="container">
+
+      <h1 class="text-primary">TestCafe Test Summary</h1>
+      <div class="client-logo" style="padding:15px"></div>
+      <div class="bg-primary" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
+        <h3>Summary</h3><br>
+        <p class="lead">Start Time: Mon Oct 20 2025 14:47:38 GMT+0100 (British Summer Time)</p>
+        <p class="lead">Browsers: Chrome 141.0.0.0 / Windows 11</p>
+        <p class="lead">Duration: 4m 28s</p>
+        <p class="lead">Tests Failed: 5 out of 5</p>
+        <p class="lead">Tests Skipped: 0</p>
+      </div><br>
+      <table class="table sortable" style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Fixture</th>
+            <th>Test Name</th>
+            <th>Browsers</th>
+            <th>Duration</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+        <tbody>
+           <tr class="danger">
+  <td>1</td>
+  <td>Verify_MessageTrackingExecutionCompletedSIT</td>
+  <td>Verify_MessageTrackingExecutionCompletedSIT</td>
+  <td>Chrome 141.0.0.0 / Windows 11</td>
+  <td>1m 01s</td>
+  <td><a href="#test-1">failed</a></td>
+ </tr>
+ <tr class="danger">
+  <td>2</td>
+  <td>Verify_MessageTrackingExecutionFailedSIT</td>
+  <td>Verify_MessageTrackingExecutionFailedSIT</td>
+  <td>Chrome 141.0.0.0 / Windows 11</td>
+  <td>1m 07s</td>
+  <td><a href="#test-2">failed</a></td>
+ </tr>
+ <tr class="danger">
+  <td>3</td>
+  <td>Verify_MessageTrackingExecutionInProgressSIT</td>
+  <td>Verify_MessageTrackingExecutionInProgressSIT</td>
+  <td>Chrome 141.0.0.0 / Windows 11</td>
+  <td>1m 15s</td>
+  <td><a href="#test-3">failed</a></td>
+ </tr>
+ <tr class="danger">
+  <td>4</td>
+  <td>Validate Cirrus Message in PN Taffic Manager</td>
+  <td>Validate Completed, Failed, In Progress Message in PN</td>
+  <td>Chrome 141.0.0.0 / Windows 11</td>
+  <td>32s</td>
+  <td><a href="#test-4">failed</a></td>
+ </tr>
+ <tr class="danger">
+  <td>5</td>
+  <td>Validate and Replay Cirrus Message in PN Traffic Manager</td>
+  <td>Validate and Replay Completed, Failed, In Progress Messages in PN</td>
+  <td>Chrome 141.0.0.0 / Windows 11</td>
+  <td>19s</td>
+  <td><a href="#test-5">failed</a></td>
+ </tr>
+
+        </tbody>
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+          </tr>
+        </thead>
+      </table>
+      <br>
+      <h3>Error Details</h3>
+       <h4 id="test-1" style="color: red;">1. Verify_MessageTrackingExecutionCompletedSIT - Verify_MessageTrackingExecutionCompletedSIT</h4>
+ <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The specified selector does not match any element in the DOM tree.
+
+ &gt; | Selector(&#39;#viewUploadForm\:j_idt223_input&#39;)
+
+Browser: Chrome 141.0.0.0 / Windows 11
+
+   56 |            .click(DocumentWorkbench.lnkUploads)
+   57 |            .click(DocumentWorkbench.lnkActions)
+   58 |            .click(DocumentWorkbench.lnkUploadDocuments)
+   59 |            const uploadInput = DocumentWorkbench.uploadFile
+   60 |        await t
+ &gt; 61 |            .setFilesToUpload(uploadInput, [uploadfilePath])
+   62 |            .typeText(DocumentWorkbench.lstDestination, data.destination_c)
+   63 |            .typeText(DocumentWorkbench.lstType, data.type_c)
+   64 |            .wait(5000) 
+   65 |            .click(DocumentWorkbench.btnSave);
+   66 |
+
+   at &lt;anonymous&gt; (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:61:14)
+   at asyncGeneratorStep (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69)
+   at _next (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69) </pre><br> <h4 id="test-2" style="color: red;">2. Verify_MessageTrackingExecutionFailedSIT - Verify_MessageTrackingExecutionFailedSIT</h4>
+ <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">AssertionError: expected &#39;In Progress&#39; to deeply equal &#39;Failed&#39;
+
++ expected - actual
+
+-In Progress
++Failed
+
+
+Browser: Chrome 141.0.0.0 / Windows 11
+
+   199 |
+   200 |        &#125
+   201 |        
+   202 |        const valmessage = await MessageTracking.txtMsgStatus.value
+   203 |        await t
+ &gt; 204 |        .expect(valmessage).eql(&#39;Failed&#39;) 
+   205 |        .click (Selector(&#39;span.ui-menuitem-text&#39;).withText(&#39;Message Search&#39;))
+   206 |    }
+   207 |    
+   208 |    }
+   209 |
+
+   at &lt;anonymous&gt; (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:204:29)
+   at asyncGeneratorStep (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69)
+   at _next (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69) </pre><br> <h4 id="test-3" style="color: red;">3. Verify_MessageTrackingExecutionInProgressSIT - Verify_MessageTrackingExecutionInProgressSIT</h4>
+ <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">The action target (&lt;span class=&quot;ui-menuitem-text&quot;&gt;Gateway&lt;/span&gt;) is invisible. 
+It descends from an element that has the &#39;display: none&#39; property (&lt;ul class=&quot;ui-widget-content ui-menu-list ui-corner-all ui-helper-clearfix ui-menu-child ui-shadow&quot; role=&quot;menu&quot;&gt;...&lt;/ul&gt;).
+
+Browser: Chrome 141.0.0.0 / Windows 11
+
+   234 |
+   235 |        for (let i = 1; i &lt;= uploadCount; i++) &#123
+   236 |            await t
+   237 |                .click(DocumentWorkbench.lnkDocumentWorkbench)
+   238 |                .click(DocumentWorkbench.lnkDocumentWorkbench)
+ &gt; 239 |                .click(DocumentWorkbench.lnkGateway)
+   240 |                .click(DocumentWorkbench.lnkUploads)
+   241 |                .expect(DocumentWorkbench.lnkRules.exists).ok()
+   242 |                .expect(DocumentWorkbench.txtSearch.exists).ok()
+   243 |                .click(DocumentWorkbench.lnkActions)
+   244 |                .expect(DocumentWorkbench.lnkUploadDocuments.exists).ok()
+
+   at &lt;anonymous&gt; (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:239:18)
+   at asyncGeneratorStep (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69)
+   at _next (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69) </pre><br> <h4 id="test-4" style="color: red;">4. Validate Cirrus Message in PN Taffic Manager - Validate Completed, Failed, In Progress Message in PN</h4>
+ <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">ReferenceError: dashboard is not defined
+
+Browser: Chrome 141.0.0.0 / Windows 11
+
+   306 |
+   307 |test
+   308 |    .meta(&#123 type20: &#39;ccData&#39; &#125)
+   309 |    (`Validate Completed, Failed, In Progress Message in PN`, async t =&gt; {
+   310 |        await LoginPage.logInSuccessful();
+ &gt; 311 |        await dashboard.selectMember(member);
+   312 |        await trafficManagerPage.navigateToTrafficManagerPage();
+   313 |
+   314 |        const messageGroups = [
+   315 |            { messages: completedMessage, status: &quot;Completed&quot; },
+   316 |            { messages: failedMessage, status: &quot;Failed&quot; },
+
+   at &lt;anonymous&gt; (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:311:9)
+   at asyncGeneratorStep (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69)
+   at _next (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69) </pre><br> <h4 id="test-5" style="color: red;">5. Validate and Replay Cirrus Message in PN Traffic Manager - Validate and Replay Completed, Failed, In Progress Messages in PN</h4>
+ <pre style="padding:15px;box-shadow: 6px 6px 6px 6px #00000033;border-radius: 10px;">ReferenceError: dashboard is not defined
+
+Browser: Chrome 141.0.0.0 / Windows 11
+
+   345 |
+   346 |test
+   347 |    .meta(&#123 type20: &#39;ccData&#39; &#125)
+   348 |    (&#39;Validate and Replay Completed, Failed, In Progress Messages in PN&#39;, async t =&gt; {
+   349 |        await LoginPage.logInSuccessful();
+ &gt; 350 |        await dashboard.selectMember(member);
+   351 |        await trafficManagerPage.navigateToTrafficManagerPage();
+   352 |
+   353 |        const messageGroups = [
+   354 |            { messages: completedMessage, status: &quot;Completed&quot; },
+   355 |            { messages: failedMessage, status: &quot;Failed&quot; },
+
+   at &lt;anonymous&gt; (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:350:9)
+   at asyncGeneratorStep (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69)
+   at _next (C:\Workspace\proagrica-test-automation-framework\test\e2e\testScripts\Verify_MessageTrackingExecutionSIT_auto_test.js:11:69) </pre><br>
+    </div>
+    <script>
+      const modal = document.getElementById('myModal');
+      const modalImage = document.getElementById("modelImage");
+
+      Array.from(document.getElementsByClassName("thumbImg")).forEach(function(el) {
+        el.onclick = function() {
+          modal.style.display = "block";
+          modalImage.src = this.src;
+        }
+      });
+
+      document.getElementsByClassName("closeModal")[0].onclick = function() {
+        modal.style.display = "none";
+      }
+    </script>
+  </body>
+  <br>
+</html>

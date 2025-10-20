@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Common ARIA Roles</title>
+</head>
+<body>
+      
+    <h1>Common ARIA Roles</h1>
+    <h3>ARIA is a W3C specification that stands for “Accessible Rich Internet Applications.” It consists of markup that can be added to HTML in order to communicate the roles, states, and properties of user interface elements to assistive technologies</h3>
+    <h2>role="combobox"</h2>
+    <select role="combobox" aria-haspopup="listbox">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+    </select>
+
+    <h2>role="button"</h2>
+    <button role="button" onclick="alert('Button clicked!')">Click Me!</button>
+
+    <h2>role="textbox"</h2>
+    <input type="text" role="textbox" placeholder="Enter text here">
+
+    <h2>role="link"</h2>
+    <a href="https://example.com" role="link">Visit Example Website</a>
+
+    <h2>role="table"</h2>
+    <table role="table">
+        <tr role="row">
+            <th role="columnheader">Header 1</th>
+            <th role="columnheader">Header 2</th>
+        </tr>
+        <tr role="row">
+            <td role="cell">Row 1, Cell 1</td>
+            <td role="cell">Row 1, Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>role="navigation"</h2>
+    <nav role="navigation">
+        <ul role="list">
+            <li role="listitem"><a href="#home" role="link">Home</a></li>
+            <li role="listitem"><a href="#about" role="link">About</a></li>
+        </ul>
+    </nav>
+
+    <h2>role="header"</h2>
+    <header role="banner">
+        <h1>H1 Header Text Size</h1>
+        <h2>H2 Header Text Size</h2>
+        <h3>H3 Header Text Size</h3>
+        <h4>H4 Header Text Size</h4>
+        <h5>H5 Header Text Size</h5>
+        <h6>H6 Header Text Size</h6>
+    </header>
+
+    <h2>role="main"</h2>
+    <main role="main">
+        <p>Main content area</p>
+    </main>
+
+    <h2>role="footer"</h2>
+    <footer role="contentinfo">
+        <p>&copy; 2025 Website Name. All rights reserved.</p>
+    </footer>
+
+    <h2>role="alert"</h2>
+    <div role="alert">Important message here!</div>
+
+    <h2>role="dialog"</h2>
+    <div role="dialog" aria-labelledby="dialogTitle">
+        <h2 id="dialogTitle">Modal Dialog</h2>
+        <p>Some important content</p>
+    </div>
+
+    <h2>role="list"</h2>
+    <ul role="list">
+        <li role="listitem">Item 1</li>
+        <li role="listitem">Item 2</li>
+    </ul>
+
+    <h2>role="form"</h2>
+    <form role="form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+    </form>
+
+    <h2>role="status"</h2>
+    <div role="status">Saving your progress...</div>
+
+    <h2>role="progressbar"</h2>
+    <progress role="progressbar" value="50" max="100"></progress>
+
+    <h2>role="checkbox"</h2>
+    <input type="checkbox" role="checkbox" aria-checked="false"> Option 1
+
+    <h2>role="radiogroup"</h2>
+    <fieldset role="radiogroup">
+        <label><input type="radio" name="choice" value="option1" role="radio"> Option 1</label>
+        <label><input type="radio" name="choice" value="option2" role="radio"> Option 2</label>
+    </fieldset>
+
+    <h2>role="switch"</h2>
+    <input type="checkbox" role="switch" aria-checked="false"> Toggle option
+
+    <h2>role="banner"</h2>
+    <header role="banner">Site Header</header>
+
+    <h2>role="search"</h2>
+    <div role="search">
+        <input type="text" placeholder="Search...">
+    </div>
+
+    <h2>role="tooltip"</h2>
+    <div role="tooltip" title="Tooltip information">Hover over me</div>
+
+    <h2>role="menu"</h2>
+    <ul role="menu">
+        <li role="menuitem">Item 1</li>
+        <li role="menuitem">Item 2</li>
+    </ul>
+
+    <h2>role="tablist"</h2>
+    <div role="tablist">
+        <button role="tab">Tab 1</button>
+        <button role="tab">Tab 2</button>
+    </div>
+
+    <h2>role="tabpanel"</h2>
+    <div role="tabpanel">Tab content here</div>
+
+    <h2>role="tree"</h2>
+    <ul role="tree">
+        <li role="treeitem">Node 1</li>
+        <li role="treeitem">Node 2</li>
+    </ul>
+
+    <h2>role="grid"</h2>
+    <table role="grid">
+        <tr role="row">
+            <td role="gridcell">Grid Cell 1</td>
+            <td role="gridcell">Grid Cell 2</td>
+        </tr>
+    </table>
+
+    <h2>role="log"</h2>
+    <div role="log">Log messages here...</div>
+
+    <h2>role="timer"</h2>
+    <div role="timer">00:10:00</div>
+
+    <h2>role="separator"</h2>
+    <hr role="separator">
+</body>
+</html>
